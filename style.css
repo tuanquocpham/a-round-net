@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  margin: .5em 0em;
+  font-size: 2.35em;
+  font-family: serif;
+}
+
+img {
+  width: 35vw;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 100;
+  text-align: center;
+}
+
+p {
+  font-size: .75em;
+  padding: .25em 2.4em 1em 2.6em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: red;
+  cursor: alias;
+}
+
+p a{
+  border-bottom: .5px solid;
+}
+
+nav {
+  border-top: 2px solid red;
+  margin-bottom: 2em;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+ol {
+  counter-reset: item;
+}
+
+li {
+  display: block;
+}
+
+li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+.accordion {
+  background-color: rgba(255, 255, 255, 0);
+  font-family: serif;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+
+.accordion:hover {
+  color: red;
+}
+
+.panel {
+  display: none;
+  overflow: hidden;
+}
+
+footer {
+  font-size: .5em;
+  padding: 4em 2.4em 1em 2.6em;
+  position: relative;
+  bottom: 0px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
+
+/*   Responsive
+**********************************/
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 3.1em;
+    margin: .5em 0em;
+    background-color: pink;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .accordion {
+    font-size: 1em;
+    color: black;
+  }
+
+  h1 {
+    margin-bottom: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+    padding: .25em .25em 1em 2.75em;
+    text-align: left;
+    hyphens: auto;
+  }
+
+  p a{
+    border-bottom: 2.5px solid;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+
+  img {
+    width: 75vw;
+  }
+}

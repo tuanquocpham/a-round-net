@@ -36,13 +36,26 @@ pre {
   word-wrap: break-word; /* IE 5.5+ */
 }
 
-.codeblock {
+pre a {
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+pre a:hover {
   color: red;
+  border-bottom: 1px solid red;
+  cursor: alias;
+}
+
+.codeblock {
   font-family: monospace;
+  padding: .25em 2.4em 0.25em 0em;
+  margin-left: 3.25em;
+  background-color: mistyrose;
 }
 
 code{
-  color: red;
+  background-color: mistyrose;
 }
 
 h1 {
@@ -129,7 +142,7 @@ footer {
   body {
     font-size: 3.1em;
     margin: .5em 0em;
-    background-color: pink;
+    background-color: mistyrose;
   }
 
   nav {

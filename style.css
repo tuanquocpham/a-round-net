@@ -24,6 +24,15 @@ img {
   color: black;
 }
 
+pre {
+  color: red;
+  font-size: .75em;
+}
+
+code{
+  color: red;
+}
+
 h1 {
   font-size: 1em;
   font-weight: 100;

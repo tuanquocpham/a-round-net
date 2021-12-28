@@ -17,11 +17,11 @@ img {
 }
 
 .nextclass {
-  color: gray;
+  opacity: 55%;
 }
 
 .nextclass a {
-  color: gray;
+  color: black;
 }
 
 h1 {
